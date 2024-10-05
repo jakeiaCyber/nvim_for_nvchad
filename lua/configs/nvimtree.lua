@@ -12,11 +12,6 @@ return {
   view = {
     width = 42,
     preserve_window_proportions = true,
-    -- mappings = {
-    --   list = {
-    --     { key = { "l", "o" }, action = "edit" },
-    --   },
-    -- },
   },
   renderer = {
     root_folder_label = false,
@@ -42,7 +37,8 @@ return {
     local function opts(desc)
       return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
     end
-
+    -- default mappings
+    api.config.mappings.default_on_attach(bufnr)
     vim.keymap.set("n", "l", api.node.open.edit, opts "Open")
   end,
 }
