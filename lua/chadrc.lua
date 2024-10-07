@@ -13,11 +13,19 @@ M.base46 = {
     ["@comment"] = { italic = true },
   },
 }
+
 M.ui = {
   cmp = {
-    style = "default",
+    icons_left = false, -- only for non-atom styles!
+    lspkind_text = true,
+    style = "default", -- default/flat_light/flat_dark/atom/atom_colored
+    format_colors = {
+      tailwind = false, -- will work for css lsp too
+      icon = "󱓻",
+    },
   },
 }
+
 M.nvdash = {
   load_on_startup = true,
   header = {
@@ -57,7 +65,15 @@ M.nvdash = {
     { txt = "─", hl = "NvDashLazy", no_gap = true, rep = true },
   },
 }
+
 M.lsp = {
   signature = false,
+}
+
+M.colorify = {
+  enabled = true,
+  mode = "virtual", -- fg, bg, virtual
+  virt_text = "󱓻 ",
+  highlight = { hex = true, lspvars = true },
 }
 return M
