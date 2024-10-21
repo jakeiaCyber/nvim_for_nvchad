@@ -6,8 +6,8 @@
 local M = {}
 
 M.base46 = {
-  theme = "catppuccin",
-
+  theme = "everforest",
+  theme_toggle = { "everforest", "everforest_light" },
   hl_override = {
     -- Comment = { italic = true },
     ["@comment"] = { italic = true },
@@ -23,6 +23,13 @@ M.ui = {
       tailwind = false, -- will work for css lsp too
       icon = "󱓻",
     },
+  },
+  -- lazyload it when there are 1+ buffers
+  tabufline = {
+    enabled = true,
+    lazyload = true,
+    order = { "treeOffset", "buffers", "tabs", "btns" },
+    modules = nil,
   },
 }
 
