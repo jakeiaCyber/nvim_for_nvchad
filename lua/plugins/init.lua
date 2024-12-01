@@ -91,16 +91,6 @@ return {
     },
   },
   {
-    "folke/noice.nvim",
-    event = "VeryLazy",
-    opts = function()
-      return require "configs.noice"
-    end,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-    },
-  },
-  {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
@@ -142,8 +132,9 @@ return {
   -- load luasnips + cmp related in insert mode only
   {
     "hrsh7th/nvim-cmp",
-    event = "InsertEnter",
+    event = "VeryLazy",
     dependencies = {
+      { "hrsh7th/cmp-cmdline" },
       {
         -- snippet plugin
         "L3MON4D3/LuaSnip",
