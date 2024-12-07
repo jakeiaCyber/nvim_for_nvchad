@@ -28,7 +28,7 @@ M.base_30 = {
   orange = "#fe640b",
   cyan = "#209fb5", -- Visual Mode
   statusline_bg = "#dce0e8", -- Status line BG
-  -- lightbg = "#dc322f", --
+  lightbg = "#dc322f", --
   pmenu_bg = "#7c7f93", -- Pmenu Select BG
   folder_bg = "#4C4F69", -- nvim tree folders color
 }
