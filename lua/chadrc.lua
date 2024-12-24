@@ -92,4 +92,8 @@ M.colorify = {
   virt_text = "󱓻 ",
   highlight = { hex = true, lspvars = true },
 }
+
+M.term = {
+  winopts = { winfixbuf = true },
+}
 return M
