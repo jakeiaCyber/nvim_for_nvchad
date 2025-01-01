@@ -6,13 +6,13 @@
 local M = {}
 
 M.base46 = {
-  theme = "catppuccin_latte",
+  theme = "tokyonight",
   hl_override = {
     -- Comment = { italic = true },
     ["@comment"] = { italic = true },
   },
   -- transparency = true,
-  theme_toggle = { "catppuccin_latte", "catppuccin_latte" },
+  theme_toggle = { "tokyonight", "tokyonight" },
 }
 
 M.ui = {
@@ -33,7 +33,7 @@ M.ui = {
     modules = nil,
   },
   statusline = {
-    theme = "minimal", -- default/vscode/vscode_colored/minimal
+    theme = "default", -- default/vscode/vscode_colored/minimal
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
     separator_style = "round",
