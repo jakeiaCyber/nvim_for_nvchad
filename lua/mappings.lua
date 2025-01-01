@@ -21,4 +21,4 @@ map("n", "<C-t>", function()
   require("menu").open "default"
 end, {})
 
-map("n", "<leader>w", "<cmd>w!<cr>", { silent = true })
+map("n", "<leader>ww", "<cmd>w!<cr>", { silent = true })
