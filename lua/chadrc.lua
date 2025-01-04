@@ -12,7 +12,7 @@ M.base46 = {
     ["@comment"] = { italic = true },
   },
   -- transparency = true,
-  theme_toggle = { "catppuccin", "tokyodark" },
+  theme_toggle = { "catppuccin", "tokyonight" },
 }
 
 M.ui = {
