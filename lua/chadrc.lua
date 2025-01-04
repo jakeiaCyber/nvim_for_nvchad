@@ -4,7 +4,6 @@
 
 ---@type ChadrcConfig
 local M = {}
-
 M.base46 = {
   theme = "catppuccin",
   hl_override = {
@@ -12,18 +11,12 @@ M.base46 = {
     ["@comment"] = { italic = true },
   },
   -- transparency = true,
-  theme_toggle = { "catppuccin", "tokyonight" },
 }
 
 M.ui = {
   cmp = {
-    icons_left = false, -- only for non-atom styles!
-    lspkind_text = true,
-    style = "default", -- default/flat_light/flat_dark/atom/atom_colored
-    format_colors = {
-      tailwind = false, -- will work for css lsp too
-      icon = "󱓻",
-    },
+    icons_left = true, -- only for non-atom styles!
+    style = "flat_light", -- default/flat_light/flat_dark/atom/atom_colored
   },
   -- lazyload it when there are 1+ buffers
   tabufline = {
@@ -37,26 +30,14 @@ M.ui = {
     -- default/round/block/arrow separators work only for default statusline theme
     -- round and block will work for minimal theme only
     separator_style = "default",
-    order = nil,
-    modules = nil,
   },
 }
-
 M.nvdash = {
   load_on_startup = true,
 }
-
 M.lsp = {
   signature = false,
 }
-
-M.colorify = {
-  enabled = true,
-  mode = "virtual", -- fg, bg, virtual
-  virt_text = "󱓻 ",
-  highlight = { hex = true, lspvars = true },
-}
-
 M.term = {
   winopts = { winfixbuf = true },
 }
