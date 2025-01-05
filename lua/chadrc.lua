@@ -5,7 +5,7 @@
 ---@type ChadrcConfig
 local M = {}
 M.base46 = {
-  theme = "catppuccin",
+  theme = "one_light",
   hl_override = {
     -- Comment = { italic = true },
     ["@comment"] = { italic = true },
@@ -16,7 +16,7 @@ M.base46 = {
 M.ui = {
   cmp = {
     icons_left = true, -- only for non-atom styles!
-    style = "flat_light", -- default/flat_light/flat_dark/atom/atom_colored
+    style = "flat_dark", -- default/flat_light/flat_dark/atom/atom_colored
   },
   -- lazyload it when there are 1+ buffers
   tabufline = {
