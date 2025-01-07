@@ -4,7 +4,6 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 local del = vim.keymap.del
-
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("n", "<leader>q", "<cmd>wqa<cr>", { desc = "Quit and save", silent = true })
 map("n", "H", "^")
